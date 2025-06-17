@@ -95,7 +95,7 @@ export default function Main() {
         <section id="about">
           <div className="panel intro">
             <img
-              src="../../public/avatar.png"
+              src="/avatar.png"
               alt="Vintage Wonder Woman"
               className="character-img"
             />
