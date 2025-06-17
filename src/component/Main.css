@@ -537,6 +537,7 @@ h3 {
     letter-spacing: 2px;
   }
 }
+<<<<<<< HEAD
 
 @media screen and (max-width: 768px) {
   .panel.intro {
@@ -554,3 +555,5 @@ h3 {
     font-size: 0.95rem;
   }
 }
+=======
+>>>>>>> 3bece99ba47fbc37c6af7b8c3e982f0e2d3c7eef
