@@ -527,23 +527,3 @@ h3 {
     letter-spacing: 2px;
   }
 }
-<<<<<<< HEAD
-
-@media screen and (max-width: 768px) {
-  .panel.intro {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .character-img {
-    max-width: 150px;
-  }
-
-  .panel.intro p {
-    padding: 0 10px;
-    font-size: 0.95rem;
-  }
-}
-=======
->>>>>>> 3bece99ba47fbc37c6af7b8c3e982f0e2d3c7eef
