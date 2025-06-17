@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonder Woman | Retro Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Bangers&display=swap" rel="stylesheet">
+    <style>
+        /* ==== Global Styles (1970s Cartoon Aesthetic) ==== */
+        :root {
+            --red: #E41F25;   // Classic comic red
+            --gold: #FFC72C;  // Bright yellow-gold
+            --blue: #1A3E8C;   // Deep comic blue
+            --white: #FFF;
+            --black: #000;
+            --halftone: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="black"/></svg>');
+        }
+
+        body {
+            font-family: 'Bangers', cursive;
+            background-color: var(--white);
+            color: var(--black);
+            line-height: 1.4;
+            background-image: var(--halftone);
+            background-size: 10px 10px;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Rubik Mono One', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            -webkit-text-stroke: 1.5px var(--black);
+            text-shadow: 4px 4px 0 rgba(0,0,0,0.2);
+        }
+
+        /* ==== Comic Panel Layout ==== */
+        .panel {
+            border: 4px solid var(--black);
+            background: var(--white);
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 900px;
+            position: relative;
+            box-shadow: 8px 8px 0 rgba(0,0,0,0.2);
+        }
+
+        .panel::before {
+            content: "";
+            position: absolute;
+            top: -15px;
+            left: -15px;
+            right: -15px;
+            bottom: -15px;
+            border: 2px dashed var(--red);
+            z-index: -1;
+        }
+
+        /* ==== Header (Title Card) ==== */
+        #header {
+            background: var(--gold);
+            text-align: center;
+            padding: 50px 0;
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        }
+
+        #header h1 {
+            font-size: 5rem;
+            color: var(--red);
+            margin-bottom: 20px;
+        }
+
+        #header p {
+            font-size: 1.8rem;
+            color: var(--blue);
+        }
+
+        /* ==== About Section ==== */
+        #about .panel {
+            background: linear-gradient(45deg, var(--gold), var(--white));
+        }
+
+        .character-img {
+            float: right;
+            width: 200px;
+            shape-outside: circle();
+            margin-left: 20px;
+            border: 4px solid var(--black);
+            background: var(--white);
+            padding: 5px;
+        }
+
+        /* ==== Skills (POW! Blams!) ==== */
+        .skill-blurb {
+            background: white;
+            border: 3px solid black;
+            padding: 15px;
+            margin: 10px;
+            display: inline-block;
+            transform: rotate(-5deg);
+            font-size: 1.2rem;
+        }
+
+        .skill-blurb:nth-child(2n) {
+            transform: rotate(3deg);
+            background: var(--gold);
+        }
+
+        /* ==== Project Gallery (Comic Grid) ==== */
+        .comic-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .comic-cell {
+            border: 3px solid var(--black);
+            aspect-ratio: 1;
+            background-size: cover;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .comic-cell:hover {
+            transform: scale(1.05) rotate(2deg);
+            z-index: 10;
+        }
+
+        /* ==== Speech Bubbles ==== */
+        .speech-bubble {
+            position: relative;
+            background: var(--white);
+            border: 3px solid var(--black);
+            border-radius: 50px;
+            padding: 15px;
+            margin: 20px;
+            max-width: 300px;
+        }
+
+        .speech-bubble::after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: 50px;
+            border-width: 15px 15px 0;
+            border-style: solid;
+            border-color: var(--white) transparent;
+        }
+
+        /* ==== Footer (Credits Roll) ==== */
+        #footer {
+            background: var(--blue);
+            color: var(--white);
+            text-align: center;
+            padding: 20px;
+            clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+        }
+
+        /* ==== Animation Keyframes ==== */
+        @keyframes wiggle {
+            0%, 100% { transform: rotate(-3deg); }
+            50% { transform: rotate(3deg); }
+        }
+
+        .wiggle {
+            animation: wiggle 1s infinite;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Title Card -->
+    <section id="header">
+        <h1>WONDER WOMAN</h1>
+        <p>Retro Cartoon Portfolio</p>
+    </section>
+
+    <!-- About Panel -->
+    <section id="about">
+        <div class="panel">
+            <img src="https://i.imgur.com/JjwX9zK.png" alt="Vintage Wonder Woman" class="character-img">
+            <h2>Holy Hera!</h2>
+            <p>By Aphrodite's grace, I'm Diana of Themyscira—warrior, diplomat, and occasional invisible jet pilot. This portfolio channels the groovy vibes of my 1970s cartoon adventures!</p>
+            <div class="speech-bubble">
+                "Great Hera! Let's fight for justice with style!"
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Panel -->
+    <section id="skills">
+        <div class="panel">
+            <h2>POW! Blam! Zonk!</h2>
+            <div class="skill-blurb">Lasso of Truth</div>
+            <div class="skill-blurb">Bracelet Deflection</div>
+            <div class="skill-blurb">Amazon Strength</div>
+            <div class="skill-blurb">Invisible Jet</div>
+            <div class="skill-blurb">Diplomacy</div>
+        </div>
+    </section>
+
+    <!-- Projects Panel -->
+    <section id="projects">
+        <div class="panel">
+            <h2>Adventure Gallery</h2>
+            <div class="comic-grid">
+                <div class="comic-cell" style="background-image:url('https://i.imgur.com/7V6gL9J.jpg')"></div>
+                <div class="comic-cell" style="background-image:url('https://i.imgur.com/9Q6WZbF.jpg')"></div>
+                <div class="comic-cell" style="background-image:url('https://i.imgur.com/3Kv5V2x.jpg')"></div>
+                <div class="comic-cell" style="background-image:url('https://i.imgur.com/5XwL7rT.jpg')"></div>
+                <div class="comic-cell wiggle" style="background-image:url('https://i.imgur.com/JjvX9zK.png')"></div>
+                <div class="comic-cell" style="background-image:url('https://i.imgur.com/2L8tH9f.jpg')"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section id="footer">
+        <p>© 1978 DC Comics | "Suffering Sappho!"</p>
+        <p>Brought to you in glorious limited animation!</p>
+    </section>
+
+    <script>
+        // Make skill blurbs interactive
+        document.querySelectorAll('.skill-blurb').forEach(blurb => {
+            blurb.addEventListener('mouseenter', () => {
+                blurb.style.transform = 'rotate(0deg) scale(1.2)';
+                blurb.style.backgroundColor = 'var(--red)';
+                blurb.style.color = 'white';
+            });
+            blurb.addEventListener('mouseleave', () => {
+                blurb.style.transform = Math.random() > 0.5 ? 'rotate(-5deg)' : 'rotate(3deg)';
+                blurb.style.backgroundColor = Math.random() > 0.5 ? 'white' : 'var(--gold)';
+                blurb.style.color = 'black';
+            });
+        });
+    </script>
+</body>
+</html>

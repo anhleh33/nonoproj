@@ -1,0 +1,99 @@
+:root {
+  --red: #d41c23;
+  --gold: #ffd700;
+  --blue: #0d3d8f;
+  --white: #ffffff;
+  --black: #1a1a1a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lora", serif;
+  background-color: var(--white);
+  color: var(--black);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 1.5px;
+  color: var(--red);
+}
+a {
+  text-decoration: none;
+  color: var(--blue);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--gold);
+}
+
+/* ==== Header ==== */
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
+    url("https://i.pinimg.com/736x/aa/31/4a/aa314a20446675a2c9447327b4a6692d.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.header-content {
+  animation: fadeIn 2s ease-in-out;
+  text-align: center;
+  padding: 100px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.header-content h1 {
+  font-size: 5rem;
+  margin-bottom: 20px;
+  color: var(--gold);
+  text-shadow: 3px 3px 0 var(--red);
+}
+
+.header-content i {
+  font-size: 5rem;
+  will-change: filter;
+  transition: filter 300ms;
+  color: #ffffffb8;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .header-content i {
+    animation: logo-spin infinite 2s linear;
+  }
+}
