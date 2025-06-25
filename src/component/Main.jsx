@@ -101,7 +101,7 @@ export default function Main() {
             />
             <h2>Introduction</h2>
             <p>
-              My name is Lê Hoàng Anh, a junior Information Technology student at Ho Chi Minh City University of Education with a strong passion for software engineering. I enjoy exploring various aspects of software development, with hands-on experience in both academic and personal projects. I’m proficient in HTML, CSS, JavaScript, and React, and continuously expanding my skill set to include modern development tools and best practices. I'm eager to contribute to a dynamic engineering team, learn from experienced professionals, and apply my knowledge to build impactful and user-friendly solutions.
+              My name is Lê Hoàng Anh, a senior Information Technology student at Ho Chi Minh City University of Education with a strong passion for software engineering. I enjoy exploring various aspects of software development, with hands-on experience in both academic and personal projects. I’m proficient in HTML, CSS, JavaScript, and React, and continuously expanding my skill set to include modern development tools and best practices. I'm eager to contribute to a dynamic engineering team, learn from experienced professionals, and apply my knowledge to build impactful and user-friendly solutions.
             </p>
 
             <div className="social">
