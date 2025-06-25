@@ -179,6 +179,15 @@ export default function Main() {
                 githubLink="https://github.com/QC2k4/BMCSDL_QLCapHoChieu.git"
                 figmaLink="https://www.figma.com/design/NBjQRVfkDixuzfR1Eh9deo/Passport-system?node-id=0-1&t=3Q6mNHWvhS1Mt6XO-1"
               />
+
+              <ProjectCard
+                image="/quizz.png"
+                alt="Quiz Website"
+                role="Frontend, Backend, Tester"
+                title="Quiz Website"
+                techStack="PHP, HTML, CSS, Bootstrap, Javascript, MongoDB"
+                githubLink="https://github.com/anhleh33/php-project"
+              />
             </div>
 
             <button className="chevron" onClick={scrollLeft}>
