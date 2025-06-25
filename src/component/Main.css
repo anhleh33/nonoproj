@@ -189,11 +189,16 @@ h3 {
 }
 
 .project-card p{
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .project-link{
   margin-right: 20px;
+}
+
+.project-card .role{
+  margin-top: 5px;
+  font-size: 18px;
 }
 
 /* ==== Footer (Credits Roll) ==== */

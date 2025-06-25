@@ -5,6 +5,7 @@ export default function ProjectCard({
   image,
   alt,
   title,
+  role,
   techStack,
   githubLink,
   figmaLink,
@@ -13,6 +14,7 @@ export default function ProjectCard({
     <div className="project-card">
       <img src={image} alt={alt} className="project-image" />
       <h3>{title}</h3>
+      <p className="role">Role: {role}</p>
       <p>{techStack}</p>
       <a
         href={githubLink}

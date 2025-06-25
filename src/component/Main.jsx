@@ -88,8 +88,8 @@ export default function Main() {
         </nav>
 
         <section id="header">
-          <h1>LE HOANG ANh</h1>
-          <p>Frontend Internship</p>
+          <h1>LE HOANG ANH</h1>
+          <p>Software Engineering</p>
         </section>
         <SlidingBanner />
         <section id="about">
@@ -101,16 +101,7 @@ export default function Main() {
             />
             <h2>Introduction</h2>
             <p>
-              My name is Lê Hoàng Anh, a junior student majoring in Information
-              Technology at Ho Chi Minh City University of Education. I have a
-              strong passion for frontend development and am eager to apply my
-              skills in HTML, CSS, JavaScript, and React to real-world projects.
-              Throughout my studies, I have worked on several personal and
-              academic projects that enhanced my understanding of responsive
-              design, user experience, and modern web technologies. I am
-              enthusiastic about learning from experienced developers,
-              contributing to a dynamic team, and growing my practical knowledge
-              through a frontend development internship.
+              My name is Lê Hoàng Anh, a junior Information Technology student at Ho Chi Minh City University of Education with a strong passion for software engineering. I enjoy exploring various aspects of software development, with hands-on experience in both academic and personal projects. I’m proficient in HTML, CSS, JavaScript, and React, and continuously expanding my skill set to include modern development tools and best practices. I'm eager to contribute to a dynamic engineering team, learn from experienced professionals, and apply my knowledge to build impactful and user-friendly solutions.
             </p>
 
             <div className="social">
@@ -126,7 +117,7 @@ export default function Main() {
                 href="#"
                 className="social-item"
                 data-tooltip="0903849635"
-                // target="_blank"
+              // target="_blank"
               >
                 <i class="fa-solid fa-phone"></i>
               </a>
@@ -173,6 +164,7 @@ export default function Main() {
                 image="/nutribite.png"
                 alt="Diet Recommender System"
                 title="Diet Recommender System"
+                role="Frontend, Tester"
                 techStack="Python, Flask, HTML, CSS, Bootstrap, JavaScript, SQL Server 2022, Figma"
                 githubLink="https://github.com/QC2k4/HTVTT_NutriBite.git"
                 figmaLink="https://www.figma.com/design/2Twkxks3Z2fueeDF2UajHK/Food-Recommender-System?node-id=0-1&t=AsszkMIF75nO8XTp-1"
@@ -181,6 +173,7 @@ export default function Main() {
               <ProjectCard
                 image="/passport.png"
                 alt="Passport System"
+                role="Frontend, Tester"
                 title="Passport System"
                 techStack="ASP.NET Core 8.0, SQL Server 2022, Razor View, HTML, CSS, Bootstrap, JavaScript, Figma"
                 githubLink="https://github.com/QC2k4/BMCSDL_QLCapHoChieu.git"
