@@ -130,14 +130,6 @@ export default function Main() {
               >
                 <i class="fa-solid fa-phone"></i>
               </a>
-              {/* <a
-                href="#"
-                className="social-item"
-                data-tooltip="Resume"
-                target="_blank"
-              >
-                <i className="fa-solid fa-file"></i>
-              </a> */}
               <a
                 href="https://github.com/anhleh33"
                 className="social-item"

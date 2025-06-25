@@ -28,7 +28,7 @@ export default function ProjectCard({
         rel="noopener noreferrer"
         className="project-link"
       >
-        View Figma
+        View on Figma
       </a>
     </div>
   );
